@@ -1,0 +1,10 @@
+<!-- Launch file for Ray Ground Filter -->
+<launch>
+    <!-- rosrun points_preprocessor ray_ground_filter -->
+    <include file="$(find static_tf)/launch/static_tf_yunlecar.launch" />
+    <include file="$(find ndt_localizer)/launch/map_loader.launch" />
+
+    <node pkg="traj_generator" type="traj_generator" name="traj_generator" output="screen" />
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find traj_generator)/rviz/rviz_config_traj_gene.rviz" />
+</launch>

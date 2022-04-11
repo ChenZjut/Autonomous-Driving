@@ -1,0 +1,10 @@
+<launch>
+    <!--><include file="$(find lidar_detection)/launch/Yunlecar_lidar_detection.launch" />-->
+
+    <node pkg="map_server" type="map_server" name="global_costmap" args="$(find gen_costmap)/map_file/map_0706.yaml"/>
+    <node pkg="gen_costmap" type="gen_costmap" name="local_costmap_node" output="screen">
+        <remap from="/velodyne_points" to="/points_no_ground" />
+        <remap from="/global_costmap" to="/map" />
+        <rosparam file="$(find gen_costmap)/cfg/gen_costmap.yaml" command="load" />
+    </node>
+</launch>

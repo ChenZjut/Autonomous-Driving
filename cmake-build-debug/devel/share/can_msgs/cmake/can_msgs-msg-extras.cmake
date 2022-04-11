@@ -1,0 +1,2 @@
+set(can_msgs_MESSAGE_FILES "/home/ubuntu/smartcar/src/msgs/can_msgs/msg/Feedback.msg;/home/ubuntu/smartcar/src/msgs/can_msgs/msg/TeleControl.msg;/home/ubuntu/smartcar/src/msgs/can_msgs/msg/TeleReport.msg;/home/ubuntu/smartcar/src/msgs/can_msgs/msg/ecu.msg;/home/ubuntu/smartcar/src/msgs/can_msgs/msg/vehicle_status.msg;/home/ubuntu/smartcar/src/msgs/can_msgs/msg/battery.msg;/home/ubuntu/smartcar/src/msgs/can_msgs/msg/brake.msg")
+set(can_msgs_SERVICE_FILES "")

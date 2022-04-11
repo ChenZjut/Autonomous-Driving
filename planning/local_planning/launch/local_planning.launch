@@ -1,0 +1,7 @@
+
+<launch>
+
+	<node pkg="local_planning" type="local_planning_node" name="local_planning_node" output="screen">
+  	<rosparam file = "$(find local_planning)/params/local_planning.yaml" command = "load"/>
+	</node>
+</launch>

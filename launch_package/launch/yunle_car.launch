@@ -1,0 +1,25 @@
+<launch>
+    
+<!--     <include file="$(find ndt_localization)/launch/ndt_localization.launch" /> -->
+    
+    <include file="$(find ray_ground_filter)/launch/Yunlecar_ray_ground_filter.1.launch" />
+
+    <include file="$(find gen_costmap)/launch/gen_costmap.launch" />
+
+    <include file="$(find global_planning)/launch/global_planning_smartcat.launch" />
+
+<!--    <include file="$(find local_planning)/launch/rollout_generator.launch" />-->
+<!--    <include file="$(find local_planner)/launch/rollout_generator.launch" />-->
+
+<!--    <include file="$(find local_planning)/launch/local_trajectory_generator.launch" />-->
+<!--    <include file="$(find local_planner)/launch/local_trajectory_generator.launch" />-->
+
+    <include file="$(find local_planning)/launch/local_planning.launch" />
+
+    <include file="$(find lidar_detection)/launch/Yunlecar_lidar_detection.launch" />
+
+    <node pkg="rviz" type="rviz" name="Rviz_for_extract_path" args="-d $(find global_planning)/rviz/yunlecar.rviz" />
+
+
+
+</launch>

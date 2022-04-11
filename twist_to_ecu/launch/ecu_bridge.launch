@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="twist_to_ecu" name="twist_to_ecu_node" type="twist_to_ecu" output="screen"/>
+
+
+</launch>
