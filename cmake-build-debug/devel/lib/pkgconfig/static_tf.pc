@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/smartcar/src/cmake-build-debug/devel
-
-Name: static_tf
-Description: Description of static_tf
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

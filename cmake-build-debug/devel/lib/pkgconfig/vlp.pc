@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/smartcar/src/cmake-build-debug/devel
-
-Name: vlp
-Description: Description of vlp
-Version: 1.11.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

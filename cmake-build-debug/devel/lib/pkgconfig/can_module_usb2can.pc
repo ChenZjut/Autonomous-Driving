@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/smartcar/src/cmake-build-debug/devel
-
-Name: can_module_usb2can
-Description: Description of can_module_usb2can
-Version: 0.0.0
-Cflags: -I/home/ubuntu/smartcar/src/can_module_usb2can/include
-Libs: -L${prefix}/lib 
-Requires: can_msgs roscpp rospy sensor_msgs std_msgs
